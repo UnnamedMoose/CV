@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.bbl
+*.log
+*.out
+*.blg
+log.*
+personalDetail.tex

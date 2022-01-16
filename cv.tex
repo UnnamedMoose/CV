@@ -1,0 +1,545 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+% colours
+\usepackage[usenames,dvipsnames]{xcolor}
+% local margin changes using \adjustwidth
+\usepackage{changepage}
+% ???
+\usepackage{comment}
+
+% margins
+\usepackage[bottom=0.9cm,top=0.9cm,left=1.5cm,right=1.5cm]{geometry}
+
+% no paragraph indents
+\setlength{\parindent}{0pt}
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{%
+	colorlinks=true,% hyperlinks will be coloured
+	urlcolor = blue,
+	linkcolor = blue,
+	anchorcolor = blue,
+	pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+% customise \section
+\usepackage{titlesec}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{5pt}
+
+%%% Tightly-spaced list
+\newcommand{\squishlist}{
+	\begin{list}{$\bullet$}
+	{
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{0pt}
+		\setlength{\topsep}{0pt}
+		\setlength{\partopsep}{0pt}
+		\setlength{\leftmargin}{2em}
+		\setlength{\labelwidth}{1.5em}
+		\setlength{\labelsep}{0.5em}
+	}
+}
+
+\newcommand{\squishend}{\end{list}}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\textbf{\large Artur K. Lidtke}}\par\par}
+
+%%% Summary
+\section{Summary}
+
+\hspace{1cm}
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{2cm} % reduce the right margin by 1 cm
+	Self-motivated engineer with background in scientific
+		software development, underwater vehicle design, experimental
+		and numerical fluid dynamics, and applied R\&D.
+	Keen on applying knowledge to practical engineering problems,
+		characterised by a can-do attitude and commitment to his work.
+\end{adjustwidth}
+\end{minipage}
+
+% ===========
+% PERSONAL INFO
+% ===========
+\section{Personal information}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm} % reduce the right margin by 1 cm
+
+%\input{personalDetail/personalDetail.tex}
+
+\begin{tabular}{l l l l}
+Not available in the online version & & & \\
+Not available in the online version & & & \\
+\end{tabular}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work and professional experience}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+%\renewcommand{\arraystretch}{0.8}
+\begin{tabular}{p{3.5cm} p{12.9cm}}
+
+\textbf{Employment} \\
+\\
+
+%---------------
+\textsc{Sep 2018 - Present} & \textsc{Researcher in Computational Fluid Dynamics RnD Group} \\
+							& Maritime Research Institute Netherlands (MARIN), Wageningen, The Netherlands \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Development of new and improvement of existing functionality of the in-house
+		computational fluid dynamic code, ReFRESCO (Fortran 95 \& 03), and associated autmated test framework.
+	\item Management of on-going research projects, identification of new opportunities and external funding.
+	\item Superivision of PhD- and MSc-level students.
+	\item Detailed validation of developed models and implementation of automated test suites.
+	\item Data analysis and automation (Python, bash).
+%	\item Wind tunnel test preparation, measurements and data analysis.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+%---------------
+\textsc{Jan 2016 - Aug 2018} & \textsc{Research Fellow in Maritime Robotics - EU BRIDGES consortium} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Undertook hydrodynamic and mechanical design of two autonomous underwater gliders.
+	\item Used computational and experimental fluid dynamic analysis for performance
+		evaluation of underwater vehicle hulls, rudders and thrusters.
+	\item Led the hydrodynamic design work package liaising with industrial and academic
+		partners to establish project timelines and prioritise design activities on system and sub-system level.
+	\item Designed, built, tested and used wind tunnel dynamometry systems for precision measurements.
+	\item Wrote software for propeller design, AUV mission simulation, data analysis (Python).
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+%---------------
+\textsc{Oct 2013 - Jun 2017} & \textsc{Doctoral Researcher in Marine Hydrodynamics} \\%, Fluid Structure Interactions Research Group} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Carried out development of acoustic tools (Ffowcs Williams-Hawkings analogy)
+		and numerical models for cavitation prediction inside the OpenFOAM package (C++).
+	\item Applied both methodologies to study the hydroacoustics of marine propellers and hydrofoils.
+	\item Developed data analysis and CFD automation tools (Python and C++).
+	%\item Engaged in undergraduate teaching of Python programming, hydro- and aero-dynamic design.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+
+\\
+\multicolumn{2}{l}{\textbf{Consultancy and short-term projects}} \\
+\\
+
+\textsc{Nov 2018 - Apr 2019} & Part time consultant on AUV propulsion (self employed) \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Established project plan and priorities within customer budget.
+	\item Performed design analysis of ducted propulsion systems of two small AUV's.
+	\item Proposed alternative designs to improve propulsion and help the vehicles meet target speeds.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+\begin{comment}
+\textsc{Dec 2014, Dec 2015, Oct 2016} & Part of Fluid Structure Interaction Group teams
+		participating in international ship hydrodynamic workshops
+		(SIMMAN '14, Tokyo '15, LR Southampton '16) \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Coordinated efforts of several contributors and organised workshop submissions.
+	\item Performed numerical simulations of flows past ship hulls and propellers.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+\end{comment}
+
+\textsc{Apr 2015} & Consultancy work for Longitude Engineering, Southampton \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Liaised with the client to come up with software requirements specification.
+	\item Developed a bespoke numerical model in Simulink to describe manned submersible dynamics.
+		% of a novel submersible design for naval applications.
+	\item Used the model to perform controllability analysis and suggested improvements to the design.
+	%\item Led the work package and managed the efforts of a second collaborator.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+
+
+\\
+\textbf{Internships} \\
+\\
+
+%---------------
+\textsc{Jun - Sep 2013} & \textsc{Summer Intern at CJR Propulsion Limited} \\
+						& 72 Quayside Road, SO18 1AD, Southampton, UK \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Developed CFD simulations and data analysis scripts for ship flow applications.
+%	\item Applied OpenFOAM for hydrodynamic analysis of propellers and ship hull.
+%	\item Developed Python scripts for automated data analysis and improved design practices.
+	\item Engaged in mechanical design and gained experience in manufacturing (3D printing, casting, CNC).
+	\item Carried out sea trials of a motor yacht to assess noise and vibration of its propeller.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+%---------------
+\textsc{Jun - Aug 2012} & \textsc{Research Intern at University of Southampton} \\
+						& Fluid Structure Interaction Group, University of Southampton, United Kingdom \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Performed a technological, economic, and regulatory feasibility study looking at suitability of
+		small modular nuclear reactors (SMRs) for propulsion of commercial ships.
+	\item Developed bespoke techno-economic evaluation tools (C++ and Matlab).
+%	\item Worked with project partners to support a \pounds10M grant application to the UK Government.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+
+\end{tabular}
+
+\end{adjustwidth}
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Key skills}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+\textbf{Areas of specialisation and professional experience}
+\squishlist
+	\item Expertise in development of scientific and engineering software for a wide variety
+		of applications using multiple programming languages and operating systems with
+		specialisation in Python \& C++ on Linux.
+	\item Comprehensive understanding of engineering principles related to all aspects of marine
+		craft design with particular focus on unmanned underwater systems developed from work for the BRIDGES consortium.
+	\item Deep understanding of marine hydrodynamics, with particular emphasis on
+		performance prediction, hydroacoustics and ship wake flows obtained during PhD, employment, and part-time projects.
+	%\item Experience in designing carrying out wind tunnel and towing tank experiments derived from
+	%	testing of underwater vehicles, hydrofoils, ship hulls and moored systems.
+\squishend
+
+\textbf{Job-related skills}
+\squishlist
+	\item Problem solving skills in areas such as applied mathematics and physical system modelling
+		derived from multiple projects centred around development of new models and methodologies.
+	\item Understanding of autonomous robot design and operation with focus on underwater robotics developed during employment, attendance of
+		conferences and training courses.
+	\item Experience in development of physical models of dynamical systems, surface and underwater vehicles.
+	\item Ability to design, build and utilise electro-mechanical systems obtained from work
+		on custom dynamometry rigs, soft robotic actuators, and hobby robotics.
+	\item Outstanding learning skills and ability to quickly adapt and cope with novel problems.
+	%\item Experience in applying computer programming and numerical analysis to solving wide variety of
+	%	engineering problems, e.g. vehicle simulation,
+	%	techno-economic evaluation, acoustic analysis and cavitation modelling
+	%\item Comprehensive understanding of engineering principles related to all aspects of marine craft design
+	%	gained throughout education and industrial experience
+\squishend
+
+\textbf{IT skills}
+\squishlist
+	\item Rich background in data analytics with focus on using Python in order to assimilate various streams of
+		data to inform decisions and support quantitative scientific conclusions.
+	\item Proficient programming skills in Python, C/C++ and Fortran; rudimentary experience in MatLab.
+	\item Experience of software development for Windows and Linux operating systems.
+	\item Ability to carry out test-driven development of complex and constantly evolving software.
+	\item Version control using git and SVN for individual and collaborative software projects.
+	\item Experience in software development for Arduino, basic understanding of embedded programming and Robot Operating System (ROS).
+	%\item Working knowledge of fluid dynamics, particularly in relation to marine applications
+	%\item Elementary teaching experience obtained during group and individual tutoring on
+	%	ship resistance and propulsion, informal guidance of new PhD students learning the OpenFOAM
+	%	CFD package, as well as co-leading an OpenFOAM skills development workshop
+	%\item Knowledge of some of the commonly used global optimisation and computer-aided decision making
+	%	techniques and their applicability during an engineering product design
+	%\item Ability to work as an independent member of a multidisciplinary team and produce deliverables contributing
+	%	to the final outcome of the project and taking part of the responsibility for its realisation
+\squishend
+
+\textbf{Communication skills}
+\squishlist
+	\item Effective written and oral communication developed through writing of journal articles,
+		project reports, and attendance of conferences.
+	\item Experience in conveying own knowledge through undergraduate teaching, guidance of students.
+		through individual and group projects, supporting fellow researchers in using OpenFOAM CFD package.
+\squishend
+
+\textbf{Organisation and managerial skills}
+\squishlist
+	\item Decision making and project management skills developed during tackling several parallel commitments with strict deadlines
+		and commercial implications thereof.
+	\item Ability to cooperate with and manage people developed during participating in several group
+		projects, supervising intern and undergraduate project students, and acting as a~sailing instructor.
+\squishend
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+\begin{tabular}{p{3.8cm} p{12.5cm}}
+
+%& \textbf{Project title:} Predicting radiated noise of marine propellers using acoustic analogies
+%	and hybrid Eulerian-Lagrangian cavitation models \\
+%& \begin{tabular}{l p{10.2cm}}
+%	Supervisors: 	& Prof. S. R. Turnock (Fluid Structure Interactions Research Group) \\
+%					& Prof. V. F. Humphrey (Institute of Sound \& Vibration Research) \\
+%	Topic:			& Use of Large Eddy Simulation, mass-transfer and Lagrangian cavitation models and
+%						acoustic analogies for marine propeller noise characterisation. \\
+%	Impact:			& Proved the concept and validated the acoustic analogy for modelling
+%						cavitation noise. This fed into a new wave of research aiming at
+%						reducing ship-induced noise pollution; applied the hybrid Eulerian-Lagrangian
+%						methodology in a new context and identified a number of ways
+%						for it to be improved. \\
+%\end{tabular} \\
+
+\textsc{Oct 2013 - Jun 2017} & \textsc{PhD in Marine Hydrodynamics} \\%, Fluid Structure Interactions Research Group} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \\
+\\
+
+%---------------
+\textsc{Oct 2009 - Jun 2013} & MEng (Hons) \textsc{Ship Science – Yacht \& Small Craft, 1$^{st}$ class} \\
+& \textsc{University of Southampton, Southampton, United Kingdom} \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Naval architecture course with selected modules focused on marine craft hydrodynamic design.
+	\item BEng project looked at implementing fuzzy-adaptive genetic algorithms to aid in the selection
+		of optimum yacht characteristics at the initial design stage (Matlab).
+	\item MEng group project focused on the development of a real-time dynamic model of an America's Cup
+		catamaran to be used for crew training (Simulink).
+		%; work fed experience into several subsequent projects
+		%at the university and external organisations (e.g. Wolfson Unit MTIA)
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+
+%---------------
+%\textsc{Sep 2006 - Jun 2009} & \textsc{II Liceum Ogolnoksztalcace, Walbrzych, Poland} \\
+%& \textsc{Physics, Mathematics and Computer Science programme}
+\end{tabular}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	OTHER ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Relevant extracurricular experience}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{13.0cm}}
+%
+\textsc{Oct 2014 - Jun 2015}	& Member of University of Southampton's team working on
+									Global Marine Technology Trends (GMTT) 2030 report
+									in collaboration with Lloyd's Register and QinetiQ \\
+%
+\textsc{Nov 2013}				& Co-organiser and demonstrator at OpenFOAM workshop at Woods Hole Oceanographic Institution (WHOI) \\
+%
+\textsc{Oct 2013 - Present}		& Supporting OpenFOAM knowledge-base of the research group through
+									local workshops and individual engagement with fellow students and researchers \\
+%
+\textsc{Oct 2013 - Sep 2018}		& Teaching and lab demonstrator at undergraduate modules - Ship Resistance and Propulsion,
+									Renewable Energy from Environmental Flows, Offshore Engineering \\
+%
+%\textsc{Apr 2012 - Jun 2013}	& Voluntary member of Atlantic Challenge England \\
+%
+%\textsc{Oct 2012 - Mar 2013} 	& Voluntary for Hampshire and Wight Trust for Maritime Archaeology \\
+%
+\textsc{Jun - Sept 2011} 		& Voluntary deckhand and sailing instructor aboard sails training ship Fryderyk Chopin \\
+%
+%\textsc{Oct 2010 - May 2011} 	& Member of team which took 5th place in IBM University Business Challenge '11 finals \\
+\end{tabular}
+}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages spoken}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{0cm}
+
+\textsc{English} - Professional (C2), %
+\textsc{Polish} - Native, %
+\textsc{Dutch} - Basic (B1)  %
+\textsc{German} - Basic (A1),
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	OTHER STUFF
+%----------------------------------------------------------------------------------------
+
+\section{Other qualifications and relevant information}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{0cm}
+
+ISSA Leisure Yacht Skipper,
+RYA VHF radio operator,
+RYA First Aid Course,
+Padi Advanced Open Water Diver
+%, US visa B-category, Driving licence B Category
+
+\end{adjustwidth}
+\end{minipage}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+
+\section{Teaching experience}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{11.0cm}}
+\textsc{Oct 2017 - Sep 2019} & Teaching assistant in Renewable Energy from Environmental Flows undergraduate module \\
+%
+\textsc{Jun 2017 - Present} & Published \href{https://github.com/UnnamedMoose/BasicOpenFOAMProgrammingTutorials}{
+		\underline{\smash{open-source training materials for OpenFOAM developers}}} \\
+%
+\textsc{Oct 2016 - Sep 2019} & Co-organiser and demonstrator during towing tank experiments for undergraduate modules \\
+%
+\textsc{Jan - Jun 2016} & Co-supervisor of an undergraduate exchange student looking at numerical modelling
+							of turbulent transition \\
+%
+\textsc{Jan 2017 - Sep 2019} & Support of several PhD students in terms of learning the OpenFOAM CFD toolbox
+								and diagnosing problems in their simulations \\
+%
+\textsc{Nov 2014}				& Demonstrator at an OpenFOAM workshop organised by the
+									National Oceanographic Institution (NOC) and
+									Woods Hole Oceanographic Institution (WHOI) \\
+%
+\textsc{Oct 2013 - Sep 2019} & Teaching assistant in Advances in Ship Resistance and Propulsion undergraduate module \\
+%
+\textsc{Oct 2013 - Sep 2019} & Teaching assistant in Advances in Ship Resistance and Propulsion
+								undergraduate module \\
+\end{tabular}
+}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	STUDENT PROJECTS
+%----------------------------------------------------------------------------------------
+
+% TODO find the titles and update.
+
+% \section{MSc projects}
+%
+% \begin{minipage}{\textwidth}
+% \begin{adjustwidth}{}{1cm}
+%
+% with Gabe:
+%     Camilla Blakesley
+%     de luca a. (adl2n17)
+%     wang t. (tw8n17)
+%     vignon l. (lv1n17)
+%     gonzalez g.t. (gtg1u17)
+%
+% with Stephen:
+%     Sebastien Lemaire
+%
+% at MARIN:
+%     Eduardo Katsuno
+%     Maik Dunkelberg
+%     Atillio Scussel
+%     (?) Tzu-Yao Huang - "Numerical Investigation of Bubble Entrapment with Tip-vortex Cavitation"
+%
+% \end{adjustwidth}
+% \end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+\end{document}

@@ -1,4 +1,20 @@
+
+
+
 %%% Peer-reviewed journal articles
+
+@article{lidtke_predicting_2022,
+	title = {Predicting cavitating propeller noise in off-design conditions using scale-resolving {CFD} simulations},
+	volume = {254},
+	doi = {10.1016/j.oceaneng.2022.111176},
+	abstract = {There is increasing awareness about the harmful impact of underwater radiated noise of shipping on the marine environment, with propeller cavitation being a major contributor thereof. In order to allow low-noise propeller design, reliable and validated numerical tools are necessary. The combined use of viscous computational fluid dynamics (CFD) and Ffowcs Williams-Hawkings acoustic analogy has long been suggested as a potential frontrunner that could address this need. However, few studies presented in the open literature have shown detailed validation focused on farfield radiated noise of propellers in cavitating conditions. Present work aims to address this by applying the methodology to two thrusters operating in off-design conditions and tested at model scale. Flow is computed using scale-resolving CFD simulations and a mass-transfer cavitation model. This allows for part of the turbulence spectrum and cavitation dynamics to be resolved. It is shown that peak sound pressure levels, corresponding to the low-frequency underwater radiated noise source, may be predicted to within 5 dB of experimental results. In addition, key features of the noise spectra, such as centre frequency of the peak broadband noise level and decay slope, are also well represented in the computations. The results are supplemented by analysis of the numerical signal-to-noise ratio.},
+	journal = {Ocean Engineering},
+	author = {Lidtke, Artur and Lloyd, Thomas and Lafeber, Frans Hendrik and Bosschers, Johan},
+	month = mar,
+	year = {2022},
+	pages = {111176}
+}
+
 @article{Lidtke2021b,
     AUTHOR = {Lidtke, Artur K. and Klapwijk, Maarten and Lloyd, Thomas},
     TITLE = {Scale-Resolving Simulations of a Circular Cylinder Subjected to Low Mach Number Turbulent Inflow},
@@ -121,6 +137,29 @@
 }
 
 %%% Peer-reviewed conference articles
+
+@inproceedings{lafeber_prediction_2022,
+	address = {Wuxi, China},
+	title = {Prediction of {Underwater} {Radiated} {Noise} from {Propeller} {Cavitation} {During} {Concept} {Design}},
+	abstract = {There is growing concern about the impact of underwater radiated noise (URN) on marine life. One of the main sources of URN of ships is propeller cavitation. Semi-empirical computational models to predict back (suction) side cavitation at the design point of open propellers have been published, but there is a lack of models that predict the URN of open propellers in off-design conditions and the URN of ducted propellers, such as thrusters. The European Union NAVAIS 1 project considered two ship types that spend large proportions of time operating at off-design conditions-a road ferry and an aquaculture workboat-and are therefore likely to experience several different forms of propeller cavitation. The present paper discusses new semi-empirical models to be used together with a boundary element method for predicting noise from these forms of cavitation. The new (medium-fidelity) models were tuned using data from a large series of model-scale noise measurements, supplemented by high-fidelity scale-resolving computational fluid dynamics simulations combined with the Ffowcs Williams-Hawkings acoustic analogy. The medium-fidelity models were used to predict the URN from a large series of propellers for a wide range of operating conditions, with the results used in a regression analysis to develop a low-fidelity tool for estimating propeller URN of road ferries and workboats during the concept design phase.},
+	booktitle = {7th {International} {Symposium} of {Marine} {Propulsors} ({SMP2022})},
+	author = {Lafeber, Frans Hendrik and Bosschers, Johan and Lidtke, Artur and Lloyd, Thomas and Van Wijngaarden, Erik and Moulijn, Joost},
+	month = oct,
+	year = {2022}
+}
+
+@inproceedings{lloyd_broadband_2022,
+	address = {Southampton, UK},
+	title = {Broadband {Trailing}-{Edge} {Noise} {Predictions} using {Incompressible} {Large} {Eddy} {Simulations}},
+	doi = {10.2514/6.2022-2818},
+	abstract = {Incompressible large eddy simulations of the flow over an airfoil at high Reynolds number and low Mach number have been performed, including simulation of bypass transition to turbulence, and trailing-edge noise predictions. Extensive data comparison and validation has been carried out, using benchmark data and additional results from literature. Three semi-analytical noise models - Curle's acoustic analogy, the Ffowcs Williams-Hall (FW-Hall) model, and Amiet's model - were applied, with the sensitivity of the results to the hydrodynamic input data investigated. Overall, a good agreement was found between experimental and numerical results in terms of hydrodynamics. The main discrepancies were an overprediction of the Reynolds stresses close to the wall, and the high-frequency part of the turbulent wall pressure spectrum, both at the trailing edge. It is hypothesised that this is caused by the underresolved transition of the boundary layer. In terms of the acoustic predictions, the FW-Hall and Amiet models perform better than Curle’s analogy, with Amiet giving the best agreement with measurements below 2 kHz, and FW-Hall being superior above this frequency, with the latter model identified as being less sensitive to the aforementioned errors in the hydrodynamic results.},
+	booktitle = {28th {AIAA}/{CEAS} {Aeroacoustics} 2022 {Conference}},
+	author = {Lloyd, Thomas and Lidtke, Artur and Kerkvliet, Maarten and Bosschers, Johan},
+	month = jun,
+	year = {2022},
+	doi = {10.2514/6.2022-2818}
+}
+
 @inproceedings{Rijsbergen2020,
 	address = {Osaka, Japan, 18-23 October},
 	author = {Rijsbergen, Martijn X. and Lidtke, Artur K. and Lajoinie, G and Versluis M.},
@@ -170,6 +209,17 @@
 }
 
 %%% Conference articles and workshop items
+
+@inproceedings{scussel_uncertainty_2022,
+	address = {Zagreb, Croatia},
+	title = {Uncertainty quantification in the prediction of cavitation inception of the {Duisburg} {Propeller} {Test} {Case}},
+	abstract = {Accurate quantitative prediction of marine propeller performance and cavitaiton inception criteria has important implications for the eventual ship operator. However, there exist a wide range of uncertain parameters that need to be input to the CFD simulations and whose choice will affect the predictions made. As stated by NASA CFD 2030 outlook, the management of errors and uncertainties due to the lack of knowledge in parameters of a given fluidic problem is an important trend for studies involving computer simulations. Aiming to mitigate gaps in studies regarding the cavitation inception of marine propellers and to deepen the discussion on the subject, the present study seeks to quantify the uncertainties in the input data of a CFD simulation of the Duisburg propeller P1570. An existing uncertainty quantification (UQ) Python framework of Katsuno et al. (2021) capable of calculating the confidence interval (CI) and the Sobol indices (S) of each input variable is further developed and used to deduce the effect of physical input parameters on the simulation results.},
+	booktitle = {24th {Numerical} {Towing} {Tank} {Symposium}},
+	author = {Scussel, Atilio and Lidtke, Artur and Rijpkema, Douwe and Düz, Bülent},
+	month = oct,
+	year = {2022}
+}
+
 @inproceedings{Wielgosz2019,
 	address = {29 Sep - 1 October, Tomar, Portugal},
 	author = {Wielgosz, Chiara and Golf, Rafael and Lidtke, Artur K. and Vaz, Guilherme and el Moctar, Ould},

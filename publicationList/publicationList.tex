@@ -185,6 +185,20 @@ Last updated on \today
 %
 \begin{itemize}
 %
+\item Kara, E., Lidtke, A. K., Rijpkema, D.,  D{\"u}z, B. , Kemal Kinaci, O. (2023)
+	"Quantifying uncertainties in numerical predictions of dynamic cavitation"
+	In 5th ECCOMAS Thematic Conference on Uncertainty Quantification in Computational Sciences and Engineering
+	12—14 June, Athens, Greece
+	\cite{kara_quantifying_2023}
+	\\ \url{https://www.researchgate.net/publication/369322866_Quantifying_uncertainties_in_numerical_predictions_of_dynamic_cavitation}
+%
+\item  Lidtke, A. K., Rijpkema, D.,  D{\"u}z, B. (2023)
+	"Combining deep reinforcement learning and computational fluid dynamics for efficient navigation in turbulent flows"
+	In X International Conference on Computational Methods in Marine Engineering (MARINE)
+	27-29 June, Madrid, Spain
+	\cite{lidtke_combining_2023}
+	\\ \url{https://www.researchgate.net/publication/369321603_Combining_deep_reinforcement_learning_and_computational_fluid_dynamics_for_efficient_navigation_in_turbulent_flows}
+%
 \item Scussel, A., Lidtke, A. K., D{\"u}z, B., Rijpkema, D. (2022)
 	"Uncertainty quantification in the prediction of cavitation inception of the Duisburg Propeller Test Case"
 	In 24th Numerical Towing Tank Symposium (NuTTS)
@@ -327,6 +341,16 @@ Last updated on \today
 %%% ABSTRACTS %%%
 %=====================
 \section{Abstracts}
+
+%---------------------
+\subsection{Quantifying uncertainties in numerical predictions of dynamic cavitation \cite{kara_quantifying_2023}}
+
+Cavitation on marine propellers is an important issue due to its negative effects on many aspects of their operation. Therefore, accurate prediction of cavitation is important to ensure better propeller design. Estimating the cavitation behavior numerically is a~difficult task due to the high computational cost of simulations and various numerical uncertainties. This study is carried out in order to estimate the parameter and discretization uncertainties and combine them into a~single value using an example 2D foil as the test case. Angle of attack and the cavitation number are selected as input parameters and their influence on force coefficients and sheet cavity properties is studied. Sobol indices are also obtained to measure the relative importance of the input and discretization uncertainties. It is seen that uncertainty in the angle of attack has a~much greater influence on the force coefficients than the uncertainty in the cavitation number or grid discretization uncertainty. On the other hand, the cavitation number uncertainty is dominant over the grid and angle of attack uncertainties for the length and volume of the cavity sheet. According to the results obtained, applying only the grid refinement studies is not sufficient for the estimation of the numerical uncertainties for this kind of CFD problems. It is proposed that assessing both parameter and discretization uncertainties for the presented and other similar applications with epistemic uncertainties should be applied more often.
+
+%---------------------
+\subsection{Combining deep reinforcement learning and computational fluid dynamics for efficient navigation in turbulent flows \cite{lidtke_combining_2023}}
+
+Autonomous underwater vehicles (AUVs) face significant challenges when navigating in turbulent environments, particularly when carrying out tasks such as inspecting offshore structures that generate large turbulent wakes. These environments increase the risk of collision and damage, and decrease the success rate of recorded video frames, but carrying out such inspections with AUV offers large potential cost savings and reduced risk to human operators. Reinforcement learning (RL) combined with computational fluid dynamics (CFD) can help develop control strategies suitable for handling such complex navigation problems. The objective of this study is to assess the feasibility of such approach. To this end, two versions of the soft actor-critic algorithm are tested: one relying on the estimated vehicle position and velocity and the other augmented with pressure surface measurements obtained from fitting the vehicle with simulated pressure transducers. Both RL agents successfully navigate in turbulent flows, but the agent provided with force estimates deduced from the surface pressure has significantly improved performance. This improvement is seen in the quality of individual episodes as well as in the training robustness and speed. Therefore, this study demonstrates the potential of using RL agents to assimilate additional information for developing robust control strategies and shows the usefulness of training RL agents in high-fidelity environments, such as CFD simulations.
 
 %---------------------
 \subsection{Predicting cavitating propeller noise in off-design conditions using scale-resolving CFD simulations \cite{lidtke_predicting_2022}}

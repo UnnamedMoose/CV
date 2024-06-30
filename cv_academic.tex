@@ -1,0 +1,336 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article}
+
+% colours
+\usepackage[usenames,dvipsnames]{xcolor}
+% local margin changes using \adjustwidth
+\usepackage{changepage}
+% ???
+\usepackage{comment}
+
+% margins
+\usepackage[bottom=0.9cm,top=0.9cm,left=1.5cm,right=1.5cm]{geometry}
+
+% no paragraph indents
+\setlength{\parindent}{0pt}
+
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{%
+	colorlinks=true,% hyperlinks will be coloured
+	urlcolor = blue,
+	linkcolor = blue,
+	anchorcolor = blue,
+	pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+% customise \section
+\usepackage{titlesec}
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{5pt}
+
+%%% Tightly-spaced list
+\newcommand{\squishlist}{
+	\begin{list}{$\bullet$}
+	{
+		\setlength{\itemsep}{0pt}
+		\setlength{\parsep}{0pt}
+		\setlength{\topsep}{0pt}
+		\setlength{\partopsep}{0pt}
+		\setlength{\leftmargin}{2em}
+		\setlength{\labelwidth}{1.5em}
+		\setlength{\labelsep}{0.5em}
+	}
+}
+
+\newcommand{\squishend}{\end{list}}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+% ===========
+% NAME - MUY IMPORTANTE
+% ===========
+\par{\centering{\textbf{\large Artur K. Lidtke}}\par\par}
+
+% ===========
+% SUMMARY
+% ===========
+\section{Profile}
+
+\hspace{1cm}
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{2cm} % reduce the right margin by 1 cm
+	Over 10 years of experience in numerical modelling of marine propeller noise, with particular focus on cavitation and turbulence. Wide range of activities in broader ship hydrodynamics, e.g. underwater vehicle hydrodynamics, manoeuvring models, resistance and propulsion. Solid scientific programming skills in C++ (OpenFOAM), Python and Fortran. Experience in supervising students, reserach project management, and funding acquisition.
+\end{adjustwidth}
+\end{minipage}
+
+% ===========
+% PERSONAL INFO
+% ===========
+% \section{Personal information}
+%
+% \begin{minipage}{\textwidth}
+% \begin{adjustwidth}{}{1cm} % reduce the right margin by 1 cm
+%
+% %\begin{tabular}{l l l}
+% Address: Stationsweg 92-209, 6711 PW, Ede, The Netherlands \\
+% Telephone: +31 639188219 \hspace{2cm} Email: artur.lidtke\@gmail.com
+% %Address: \\
+% %Telephone: \hspace{2cm} Email:
+% %\end{tabular}
+%
+% \end{adjustwidth}
+% \end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Professional experience}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+%\renewcommand{\arraystretch}{0.8}
+\begin{tabular}{p{3.5cm} p{12.9cm}}
+
+% \textbf{Employment} \\
+% \\
+
+%---------------
+\textsc{Sep 2018 - Present} & \textsc{Senior Researcher in Computational Fluid Dynamics RnD Group} \\
+							& Maritime Research Institute Netherlands (MARIN), Wageningen, The Netherlands \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Development of new and improvement of existing functionality of the in-house
+		computational fluid dynamic code, ReFRESCO (Fortran 95 \& 03), and associated automated test framework and data analysis and automation pipelines (Python, bash, xml).
+	\item Management of on-going research projects, identification of new opportunities, formulating vision for future research directions and securing external funding.
+	\item Superivision of PhD- and MSc-level students.
+	% \item Detailed validation of developed models and implementation of automated test suites.
+	% \item Data analysis and automation (Python, bash).
+	\item Development and application of machine learning methods to fluid dynamic problems.
+    \item Fostering external collaborations with universities and partner institutions.
+%	\item Wind tunnel test preparation, measurements and data analysis.
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+%---------------
+\textsc{Jan 2016 - Aug 2018} & \textsc{Research Fellow in Maritime Robotics - EU BRIDGES consortium} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Hydrodynamic and mechanical design of two autonomous underwater gliders.
+	\item Use of computational and experimental fluid dynamic analysis for performance
+		evaluation of underwater vehicle hulls, rudders and thrusters.
+	\item Leading hydrodynamic design work package, liaising with industrial and academic
+		partners to establish project timelines and prioritise design activities on system and sub-system level.
+	\item Design, construction, and use of wind tunnel dynamometry systems for precision measurements.
+	\item Development of software for propeller design, AUV mission simulation, data analysis (Python).
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+\\
+
+%---------------
+\textsc{Oct 2013 - Jun 2017} & \textsc{Doctoral Researcher in Marine Hydrodynamics} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \vspace{0.1cm} \\
+%
+\multicolumn{2}{l}{
+\hspace{1cm}\begin{minipage}[t]{\textwidth}
+\begin{adjustwidth}{}{2cm}
+\squishlist
+	\item Development of acoustic tools and Lagrangian cavitation models inside OpenFOAM (C++).
+	\item Application to hydroacoustics of marine propellers and hydrofoils.
+	\item Development of data analysis and CFD automation tools (Python and C++).
+\squishend
+\end{adjustwidth}
+\end{minipage}
+} \\
+
+\end{tabular}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+\begin{tabular}{p{3.8cm} p{12.5cm}}
+
+\textsc{Oct 2013 - Jun 2017} & \textsc{PhD in Marine Hydrodynamics} \\
+							& Fluid Structure Interaction Group, University of Southampton, United Kingdom \\
+\\
+
+%---------------
+\textsc{Oct 2009 - Jun 2013} & MEng (Hons) \textsc{Ship Science – Yacht \& Small Craft, 1$^{st}$ class} \\
+& University of Southampton, Southampton, United Kingdom \\
+
+\end{tabular}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	SCIENCE EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Research areas}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+\textbf{Cavitation and marine propeller noise} - core research theme started during first industrial placement and continued throughout entire career. Resulted in the publication of several journal articles and development of tools in two CFD packages. Currently continues as own research, as well as through ongoing MSc and PhD projects. Contributed to the acquisition of funding through the EU SCALE project as co-PI.
+\vspace{6pt}
+
+\textbf{Underwater vehicle hydrodynamics} - resulted from applying knowledge gained during MEng project and consultancy work to underwater vehicle manoeuvring and evolved further during postdoc on underwater glider hydrodynamic performance. Current research involves applying reinforcement learning techniques to control in turbulent environments and future project ideas are under development.
+\vspace{6pt}
+
+\textbf{Data-driven methods in computational fluid dynamics} - recent branch of research with so far limited public track record. Mostly focused on internal research on development of reduced order modelling for ship flows and its application to ship and propeller optimisation workflows. One of the ongoing projects is looking at the application of physics-informed neural networks (PINNs) to ship wake data and will likely result in at least a conference publication. Through the "exaSIMPLE" consortium (co-PI) the use of data-driven techniques for accelerating CFD is also being investigated.
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	GRANTS
+%----------------------------------------------------------------------------------------
+
+\section{Funding acquisition}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{14.5cm}}
+\textsc{Jan 2024} & EU inno4scale "exaSIMPLE" (€180k) - co-authored the idea, contributed to proposal writing, manages the MARIN team of researchers, carries out relevant research, and takes an active role in steering the project. \\
+%
+\textsc{Nov 2023} & EU H2020 "SCALE" (fully-funded PhD position at TU Delft) - contributing to research on propeller optimisation through supervision of a PhD student working development of data-driven prediction tools. Contributed to proposal writing and manages the project internally through MARIN funding. \\
+\end{tabular}
+}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	TEACHING
+%----------------------------------------------------------------------------------------
+
+\section{Teaching experience}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{12.5cm}}
+\textsc{May 2024} & Invited lecture at TU Deflt for the Numerical Ship Hydrodynamics course, topic of viscous CFD for ship propulsion \\
+%
+\textsc{Oct 2023 - Present} & Instructor at MARIN's ship hydrodynamics course, topic of viscous CFD for ship design \\
+%
+\textsc{Oct 2017 - Sep 2019} & Teaching assistant in Renewable Energy from Environmental Flows undergraduate module \\
+%
+\textsc{Jun 2017 - Present} & Published \href{https://github.com/UnnamedMoose/BasicOpenFOAMProgrammingTutorials}{
+		\underline{\smash{open-source training materials for OpenFOAM developers}}} \\
+%
+\textsc{Oct 2016 - Sep 2019} & Co-organiser and demonstrator during towing tank experiments for undergraduate modules \\
+%
+\textsc{Jan 2017 - Sep 2019} & Tutoring of PhD students in the application of and code development for OpenFOAM \\
+%
+\textsc{Nov 2014} & Demonstrator at an OpenFOAM workshop organised by the National Oceanographic Institution (NOC) and Woods Hole Oceanographic Institution (WHOI) \\
+%
+\textsc{Oct 2013 - Sep 2019} & Teaching assistant in Advances in Ship Resistance and Propulsion undergraduate module \\
+\end{tabular}
+}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	STUDENTS
+%----------------------------------------------------------------------------------------
+
+\section{Student supervision}
+
+\begin{minipage}{\textwidth}
+\begin{adjustwidth}{}{1cm}
+
+\textbf{PhD students}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{13.0cm}}
+\textsc{Apr 2024 - Present} & "Physics-based prediction of propeller cavitation for use in optimisation studies" \\
+\textsc{Mar 2023 - Present} & "Subgrid-scale modelling of bubbly flows" \\
+\textsc{Oct 2018 - Dec 2020} & "Improved cavitation modelling for practical propeller simulations" (unfinished) \\
+\end{tabular}
+}
+
+\textbf{MSc students}
+
+{\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{l p{15.0cm}}
+\textsc{2024} & \vspace{-13pt}\begin{itemize}
+    \item "Numerical Predictions of Airfoil Acoustics with Inflow Turbulence"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2023} & \vspace{-13pt}\begin{itemize}
+    \item "Quantifying Parameter and Discretization-Based Uncertainties in CFD simulations: A Case Study on a Cavitating Flow Over a 2D NACA 66 Hydrofoil"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2022} & \vspace{-13pt}\begin{itemize}
+    \item "Numerical Investigation of Bubble Entrapment with Tip Vortex via an Eulerian-
+Lagrangian Approach"
+    \end{itemize}\vspace{-13pt} \\
+%
+% \textsc{2021} & \vspace{-13pt}\begin{itemize}
+%     \item
+%     \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2020} & \vspace{-13pt}\begin{itemize}
+    \item "Physics-informed prediction of roll damping coefficients"
+    \item MSc internship - "Uncertainty quantification in the prediction of cavitation inception of the Duisburg Propeller Test Case"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2019} & \vspace{-13pt}\begin{itemize}
+    \item MSc internship - "Estimating parameter and discretization uncertainties using a laminar–turbulent transition model"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2018} & \vspace{-13pt}\begin{itemize}
+    \item "Cavitation modelling on a propeller behind a wake generator"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2017} & \vspace{-13pt}\begin{itemize}
+    \item "Modelling physics of the basilisk lizard"
+    \item "Design of a soft robot for impulsive propulsion"
+    \end{itemize}\vspace{-13pt} \\
+%
+\textsc{2016} & \vspace{-13pt}\begin{itemize}
+    \item MSc internship - "Modelling natural transition on hydrofoils for application in underwater gliders"
+    \end{itemize}\vspace{-13pt} \\
+%
+\end{tabular}
+}
+
+\end{adjustwidth}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+\end{document}

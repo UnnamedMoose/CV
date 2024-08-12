@@ -8,3 +8,4 @@ log.*
 personalDetail.tex
 *.gz
 example*
+publicationList/publicationList.synctex.gz

@@ -201,6 +201,17 @@ Last updated on \today
 \end{itemize}
 
 %====
+\subsection{Preprints}
+%
+\begin{itemize}
+%
+\item Jena, S., Weymouth, G, Lidtke, A. K., Corradu, A. (2025), "Predicting airfoil pressure distribution using boundary graph neural networks", 
+	\cite{2025_jena_predicting}
+	\\ \url{https://arxiv.org/pdf/2503.18638}
+%
+\end{itemize}
+
+%====
 \subsection{Conference articles and workshop items}
 %
 \begin{itemize}
@@ -368,6 +379,20 @@ Last updated on \today
 %%% ABSTRACTS %%%
 %=====================
 \section{Abstracts}
+
+%---------------------
+\subsection{Predicting airfoil pressure distribution using boundary graph neural networks \cite{2025_jena_predicting}}
+
+Surrogate models are essential for fast and accurate surface pressure and friction predictions during design
+optimization of complex lifting surfaces. This study focuses on predicting pressure distribution over twodimensional airfoils using graph neural networks (GNNs), leveraging their ability to process non-parametric geometries. We introduce boundary graph neural networks (B-GNNs) that operate exclusively on surface meshes
+and compare these to previous work on volumetric GNNs operating on volume meshes. All of the training
+and evaluation is done using the airfRANS (Reynolds-averaged Navier-Stokes) database. We demonstrate
+the importance of all-to-all communication in GNNs to enforce the global incompressible flow constraint and
+ensure accurate predictions. We show that supplying the B-GNNs with local physics-based input-features, such
+as an approximate local Reynolds number Rex and the inviscid pressure distribution from a panel method code,
+enables a 83\% reduction of model size and 87\% of training set size relative to models using purely geometric
+inputs to achieve the same in-distribution prediction accuracy. We investigate the generalization capabilities of
+the B-GNNs to out-of-distribution predictions on the S809/27 wind turbine blade section and find that incorporating inviscid pressure distribution as a feature reduces error by up to 88\% relative to purely geometry-based inputs. Finally, we find that the physics-based model reduces error by 85\% compared to the state-of-the-art volumetric model INFINITY.
 
 %---------------------
 \subsection{The roles of individual force components on the capture mechanism of bubbles around a vortical flow \cite{huang_roles_2024}}
